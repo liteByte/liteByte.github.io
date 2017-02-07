@@ -9,6 +9,7 @@ const clean = require('gulp-clean');
 const htmlmin = require('gulp-htmlmin');
 const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
+const flatten = require('gulp-flatten');
 
 const librariesJS = [];
 
@@ -48,7 +49,7 @@ gulp.task('build-vendor-css', () => {
 });
 
 gulp.task('compile-sass', () => {
-  return gulp.src('./src/**/*.scss')
+  return gulp.src(['./src/**/*.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./src'));
 });
@@ -72,6 +73,7 @@ gulp.task('html', callback => {
 gulp.task('minify-html', () => {
   return gulp.src(['./src/**/*.html'])
     .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(flatten())
     .pipe(gulp.dest('./dist'));
 });
 
