@@ -1,15 +1,18 @@
-const gulp = require('gulp');
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
-const gulpSequence = require('gulp-sequence');
-const inject = require('gulp-inject');
-const watch = require('gulp-watch');
-const rev = require('gulp-rev');
-const clean = require('gulp-clean');
-const htmlmin = require('gulp-htmlmin');
-const sass = require('gulp-sass');
-const cleanCSS = require('gulp-clean-css');
-const flatten = require('gulp-flatten');
+const fs            = require('fs');
+
+const gulp          = require('gulp');
+const concat        = require('gulp-concat');
+const uglify        = require('gulp-uglify');
+const gulpSequence  = require('gulp-sequence');
+const inject        = require('gulp-inject');
+const watch         = require('gulp-watch');
+const rev           = require('gulp-rev');
+const clean         = require('gulp-clean');
+const htmlmin       = require('gulp-htmlmin');
+const sass          = require('gulp-sass');
+const cleanCSS      = require('gulp-clean-css');
+const flatten       = require('gulp-flatten');
+const replace       = require('gulp-replace');
 
 const librariesJS = [];
 
@@ -67,25 +70,53 @@ gulp.task('minify-css', () => {
 //****************************** HTML ******************************
 
 gulp.task('html', callback => {
-  gulpSequence('minify-html', 'inject')(callback);
+  gulpSequence('minify-html', 'copy-index-html', 'inject', 'replace', 'minify-index')(callback);
 });
 
 gulp.task('minify-html', () => {
-  return gulp.src(['./src/**/*.html'])
+  return gulp.src(['./src/**/*.html', '!./src/**/_*.html'])
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(flatten())
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('inject', ['copy-index-html'], () => {
+gulp.task('copy-index-html', () => {
+  return gulp.src('./src/index.html')
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('inject', () => {
   return gulp.src('./index.html')
     .pipe(inject(gulp.src(['./dist/*.css'], {read: false}, {name: 'head'})))
     .pipe(inject(gulp.src(['./dist/main-*.js'], {read: false}, {name: 'body'})))
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('copy-index-html', () => {
-  return gulp.src('./src/index.html')
+gulp.task('replace', () => {
+  return gulp.src('./index.html')
+    .pipe(replace(text('header'), file('./src/header/_header.html')))
+    .pipe(replace(text('logo'), file('./src/logo/_logo.html')))
+    .pipe(replace(text('golang'), file('./src/golang/_golang.html')))
+    .pipe(replace(text('services'), file('./src/services/_services.html')))
+    .pipe(replace(text('process'), file('./src/process/_process.html')))
+    .pipe(replace(text('contact'), file('./src/contact/_contact.html')))
+    .pipe(gulp.dest('./'));
+
+  function text(name) {
+    return `<!-- REPLACE ${name} -->`;
+  }
+
+  function file(path) {
+    return fs.readFileSync(path, 'utf8');
+  }
+});
+
+gulp.task('minify-index', () => {
+  return gulp.src('./index.html')
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
     .pipe(gulp.dest('./'));
 });
 
