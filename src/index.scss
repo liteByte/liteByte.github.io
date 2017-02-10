@@ -5,3 +5,10 @@
 @import "process/process";
 @import "team/team";
 @import "contact/contact";
+
+body {
+  width: 100vw;
+  min-height: 50px;
+  margin: 0;
+  font-family: 'Poiret One', 'Arial', sans-serif;
+}
