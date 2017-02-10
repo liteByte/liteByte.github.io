@@ -62,8 +62,6 @@ gulp.task('minify-css', () => {
     .pipe(concat('main.css'))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rev())
-    .pipe(gulp.dest('./dist'))
-    .pipe(rev.manifest())
     .pipe(gulp.dest('./dist'));
 });
 
