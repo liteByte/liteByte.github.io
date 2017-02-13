@@ -1,0 +1,12 @@
+#logo {
+  text-align: center;
+  height: 100vh;
+  position: relative;
+
+  img {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+  }
+
+}
