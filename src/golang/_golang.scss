@@ -1,0 +1,24 @@
+#golang {
+  background-color: white;
+
+  .row {
+    width: 100%;
+    display: flex;
+
+    .column {
+      flex: 1;
+
+      &:first-child {
+        text-align: right;
+      }
+    }
+  }
+
+  img {
+    margin: 0 50px;
+  }
+
+  p {
+    line-height: 25px;
+  }
+}
