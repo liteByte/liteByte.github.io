@@ -12,10 +12,17 @@ body {
   width: 100vw;
   min-height: 50px;
   margin: 0;
+  background: #1a1a1a;
   font-family: 'Muli', 'Arial', sans-serif;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+section {
+  width: 100%;
+  padding: 70px 150px;
+  box-sizing: border-box;
 }
