@@ -1,3 +1,5 @@
+@import "mixins";
+
 @import "header/header";
 @import "logo/logo";
 @import "golang/golang";
@@ -5,3 +7,15 @@
 @import "process/process";
 @import "team/team";
 @import "contact/contact";
+
+body {
+  width: 100vw;
+  min-height: 50px;
+  margin: 0;
+  font-family: 'Muli', 'Arial', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
