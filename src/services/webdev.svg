@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+        <!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+        <!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+        <!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+        <!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+        <!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+        <!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+        <!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+        <!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+        ]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="203.281px"
+	 height="178.534px" viewBox="0 0 203.281 178.534" enable-background="new 0 0 203.281 178.534" xml:space="preserve">
+<switch>
+	<g i:extraneous="self">
+		<g>
+			<g>
+				<polygon fill="#BCBBAF" points="116.877,144.164 119.744,174.667 89.768,174.667 92.605,144.164 				"/>
+				<path fill="#EAE8DC" d="M172.916,131.271v9.111c0,2.112-1.701,3.813-3.813,3.813H40.377c-2.111,0-3.814-1.701-3.814-3.813
+					v-9.111H172.916z"/>
+				<path fill="#1A1A1A" d="M172.916,46.156v85.114H36.562V46.156c0-2.112,1.703-3.813,3.814-3.813h128.726
+					C171.215,42.374,172.916,44.076,172.916,46.156z"/>
+				<rect x="78.326" y="172.229" fill="#EAE8DC" width="52.859" height="6.305"/>
+				<path fill="#333333" d="M91.532,42.373l-44.507,88.897h125.167V43.635c-0.694-0.787-1.7-1.292-2.836-1.292H91.532V42.373z"/>
+				<path fill="#EAE8DC" d="M36.562,50.474v-4.318c0-2.112,1.701-3.813,3.814-3.813h128.726c2.112,0,3.813,1.701,3.813,3.813v4.318
+					H36.562z"/>
+				<rect x="36.562" y="47.506" fill="#EAE8DC" width="8.371" height="88.754"/>
+				<rect x="164.545" y="48.816" fill="#EAE8DC" width="8.371" height="87.445"/>
+				<rect x="122.74" y="73.419" fill="#CCCCCC" width="32.666" height="37.581"/>
+			</g>
+			<g>
+				<rect x="103.604" fill="#C97E6F" width="12.012" height="65.636"/>
+				<polygon fill="#F0D19E" points="109.609,81.202 115.615,65.636 103.604,65.636 				"/>
+				<polygon fill="#C97E6F" points="106.607,73.419 112.611,73.419 109.609,81.202 				"/>
+			</g>
+			<g>
+				<path fill="#808080" d="M82.76,99.583l-5.617-7.513l5.617-7.513h12.442c-2.706-5.15-8.101-8.667-14.323-8.667
+					c-8.936,0-16.18,7.243-16.18,16.18s7.244,16.18,16.18,16.18c6.223,0,11.617-3.518,14.323-8.667H82.76z"/>
+				<path fill="#808080" d="M6.709,85.256C3.002,85.256,0,88.307,0,92.07s3.002,6.813,6.709,6.813h60.557V85.256H6.709z
+					 M9.176,95.561c-1.898,0-3.438-1.563-3.438-3.491s1.539-3.491,3.438-3.491s3.438,1.563,3.438,3.491S11.074,95.561,9.176,95.561z
+					"/>
+			</g>
+			<path fill="#808080" d="M171.278,156.593h-9.692l-4.846,8.394l4.846,8.394h9.692l4.847-8.394L171.278,156.593z M166.432,168.723
+				c-2.062,0-3.736-1.673-3.736-3.737s1.674-3.736,3.736-3.736c2.064,0,3.736,1.673,3.736,3.736S168.496,168.723,166.432,168.723z"
+				/>
+			<g>
+				<rect x="185.756" y="152.343" fill="#808080" width="15.833" height="5.491"/>
+				<g>
+					<polygon fill="#808080" points="190.922,171.912 193.672,177.688 196.422,171.912 196.422,155.088 190.922,155.088 					"/>
+					<line fill="none" stroke="#333333" stroke-miterlimit="10" x1="190.922" y1="169.167" x2="196.422" y2="172.084"/>
+					<line fill="none" stroke="#333333" stroke-miterlimit="10" x1="190.922" y1="164.912" x2="196.422" y2="167.83"/>
+					<line fill="none" stroke="#333333" stroke-miterlimit="10" x1="190.922" y1="160.656" x2="196.422" y2="163.573"/>
+					<line fill="none" stroke="#333333" stroke-miterlimit="10" x1="190.922" y1="158.391" x2="196.422" y2="158.391"/>
+				</g>
+			</g>
+			<g>
+				<rect x="184.697" y="92.674" fill="#78A389" width="18.584" height="36.325"/>
+				<ellipse fill="#78A389" cx="193.989" cy="129" rx="9.292" ry="4.416"/>
+				<ellipse fill="#78A389" cx="193.989" cy="92.674" rx="9.292" ry="4.417"/>
+				<rect x="188.197" y="84.139" fill="#78A389" width="11.584" height="6.833"/>
+				<polygon fill="#999999" points="196.031,44.156 195.031,40.197 192.947,40.197 191.947,44.156 191.947,44.156 191.947,84.14 
+					196.031,84.14 196.031,44.156 				"/>
+				<rect x="192.307" y="95.625" fill="#668977" width="3.365" height="27"/>
+				<rect x="199.915" y="95.625" fill="#668977" width="3.366" height="27"/>
+				<rect x="184.697" y="95.625" fill="#668977" width="3.367" height="27"/>
+			</g>
+		</g>
+	</g>
+</switch>
+</svg>
