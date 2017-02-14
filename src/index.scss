@@ -9,10 +9,10 @@
 @import "contact/contact";
 
 body {
-  width: 100vw;
+  min-width: 300px;
   min-height: 50px;
   margin: 0;
-  background: #1a1a1a;
+  background-image: url('/src/logo/pattern.svg');
   font-family: 'Muli', 'Arial', sans-serif;
 }
 
@@ -25,4 +25,21 @@ section {
   width: 100%;
   padding: 70px 150px;
   box-sizing: border-box;
+  position: relative;
+  will-change: transform;
+  @include will-change-legacy;
+}
+
+.title {
+  width: 100%;
+  margin: 0 0 25px 0;
+  text-align: center;
+  font-family: Poiret One, 'cursive';
+  font-weight: 100;
+  font-size: 4.5rem;
+}
+
+.subtitle {
+  @extend .title;
+  font-size: 2.5rem;
 }
