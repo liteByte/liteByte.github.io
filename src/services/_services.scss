@@ -14,4 +14,21 @@
       }
     }
   }
+
+  .technologies {
+
+  }
+
+  .work > div {
+    display: flex;
+
+    article {
+      flex: 1;
+      max-width: 300px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
