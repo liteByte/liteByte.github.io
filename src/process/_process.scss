@@ -1,0 +1,30 @@
+#process {
+  background-color: #fff;
+  display: inline-block;
+
+  > div {
+    width: 100%;
+    float: left;
+
+    > div {
+      width: 50%;
+      float: left;
+    }
+
+    .text {
+      &:nth-child(odd) {
+        text-align: right;
+      }
+    }
+
+    .img {
+      text-align: center;
+      //&:nth-child(even) {
+      //  text-align: right;
+      //}
+      //&:nth-child(odd) {
+      //  text-align: left;
+      //}
+    }
+  }
+}
