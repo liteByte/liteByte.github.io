@@ -1,0 +1,42 @@
+#contact {
+  color: #fff;
+
+  .questions{
+    max-width: 960px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+
+    .question-container{
+      padding: 10px;
+      font-weight: 100;
+
+      .question{
+        display: block;
+        margin-bottom: 50px;
+        font-size: 1.5rem;
+      }
+
+      .answer{
+        max-width: 500px;
+        width: 100%;
+        overflow: hidden;
+        resize: none;
+        background: none;
+        border: 0;
+        border-bottom: 1px solid white;
+        color: white;
+        font-size: 1.5rem;
+        line-height: 20px;
+
+        &:focus{
+          outline-width: 0;
+        }
+
+        &:disabled{
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+
+}
