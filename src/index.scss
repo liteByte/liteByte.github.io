@@ -23,15 +23,10 @@ a {
 
 section {
   width: 100%;
-  padding: 70px 15px;
   box-sizing: border-box;
   position: relative;
   will-change: transform;
   @include will-change-legacy;
-
-  @media (min-width: 850px) {
-    padding: 70px 150px;
-  }
 }
 
 .title {

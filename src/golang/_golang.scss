@@ -1,5 +1,10 @@
 #golang {
+  padding: 70px 15px;
   background-color: #fff;
+
+  @media (min-width: 850px) {
+    padding: 70px 150px;
+  }
 
   .row {
     width: 100%;
