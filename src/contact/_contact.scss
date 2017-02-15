@@ -1,22 +1,30 @@
 #contact {
   color: #fff;
 
-  .questions{
+  .questions {
     max-width: 960px;
     margin: 50px auto 0 auto;
     text-align: center;
 
-    .question-container{
+    .question-container {
       padding: 10px;
       font-weight: 100;
 
-      .question{
+      &:last-of-type {
+        padding-top: 12px;
+      }
+
+      textarea {
+        height: 23px;
+      }
+
+      .question {
         display: block;
         margin-bottom: 50px;
         font-size: 1.5rem;
       }
 
-      .answer{
+      .answer {
         max-width: 500px;
         width: 100%;
         overflow: hidden;
@@ -28,11 +36,11 @@
         font-size: 1.5rem;
         line-height: 20px;
 
-        &:focus{
+        &:focus {
           outline-width: 0;
         }
 
-        &:disabled{
+        &:disabled {
           border-bottom: 0;
         }
       }
