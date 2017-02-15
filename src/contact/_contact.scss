@@ -7,6 +7,10 @@
     margin: 50px auto 0 auto;
     display: flex;
 
+    h3 {
+      margin: 0 0 16px 0;
+    }
+
     .questions {
       min-width: 50%;
       flex: 1;
@@ -22,7 +26,7 @@
         }
 
         textarea {
-          height: 23px;
+          height: 124px;
           max-height: 300px;
         }
 
@@ -56,8 +60,12 @@
       box-sizing: border-box;
 
       p {
-        margin-left: 15px;
+        margin: 10px 0 0 15px;
         font-weight: 100;
+      }
+
+      .phone, .map {
+        margin-top: 35px;
       }
     }
   }
