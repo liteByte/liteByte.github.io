@@ -1,0 +1,78 @@
+#contact {
+  min-height: 700px;
+  padding: 70px 15px;
+  color: #fff;
+
+  @media (min-width: 850px) {
+    padding: 70px 150px;
+  }
+
+  .content {
+    max-width: 960px;
+    margin: 50px auto 0 auto;
+    display: flex;
+
+    h3 {
+      margin: 0 0 16px 0;
+    }
+
+    .questions {
+      min-width: 50%;
+      flex: 1;
+      padding: 0 70px 0 0;
+      box-sizing: border-box;
+
+      .question-container {
+        padding: 10px 0;
+        font-weight: 100;
+
+        &:last-of-type {
+          padding-top: 12px;
+        }
+
+        textarea {
+          height: 124px;
+          max-height: 300px;
+        }
+
+        .answer {
+          max-width: 500px;
+          width: 100%;
+          overflow: hidden;
+          resize: none;
+          background: none;
+          border: 0;
+          border-bottom: 1px solid white;
+          color: white;
+          font-size: 1rem;
+          line-height: 20px;
+
+          &:focus {
+            outline-width: 0;
+          }
+
+          &:disabled {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .alternatives {
+      min-width: 50%;
+      flex: 1;
+      padding: 0 25px;
+      box-sizing: border-box;
+
+      p {
+        margin: 10px 0 0 15px;
+        font-weight: 100;
+      }
+
+      .phone, .map {
+        margin-top: 35px;
+      }
+    }
+  }
+
+}

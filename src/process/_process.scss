@@ -1,8 +1,13 @@
 @import 'animations';
 
 #process {
-  background-color: #fff;
+  padding: 70px 15px;
   display: inline-block;
+  background-color: #fff;
+
+  @media (min-width: 850px) {
+    padding: 70px 150px;
+  }
 
   .line {
     width: 3px;

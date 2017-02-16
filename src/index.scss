@@ -9,7 +9,7 @@
 @import "contact/contact";
 
 body {
-  min-width: 300px;
+  min-width: 450px;
   min-height: 50px;
   margin: 0;
   background-image: url('/src/logo/pattern.svg');
@@ -23,7 +23,6 @@ a {
 
 section {
   width: 100%;
-  padding: 70px 150px;
   box-sizing: border-box;
   position: relative;
   will-change: transform;
