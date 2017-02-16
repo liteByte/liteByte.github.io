@@ -1,0 +1,149 @@
+@import 'animations';
+
+#process {
+  padding: 70px 15px;
+  display: inline-block;
+  background-color: #fff;
+
+  @media (min-width: 950px) {
+    padding: 70px 150px;
+  }
+
+  .circle {
+    display: none;
+    height: 25px;
+    width: 25px;
+    background: #dadada;
+    border-radius: 50%;
+
+    @media (min-width: 750px) {
+      display: block;
+    }
+  }
+
+  .line {
+    display: none;
+    width: 3px;
+    height: calc(100% - 200px);
+    position: absolute;
+    left: 50%;
+    background: #dadada;
+    @include transform(translateX(-50%));
+
+    @media (min-width: 750px) {
+      display: block;
+    }
+
+    .circle {
+      position: absolute;
+      left: 50%;
+
+      &:first-child {
+        top: 0;
+        @include transform(translate(-50%, -50%));
+      }
+
+      &:last-child {
+        bottom: 0;
+        @include transform(translate(-50%, +50%));
+      }
+    }
+  }
+
+  .content {
+    padding-top: 50px;
+    display: inline-block;
+
+    > div {
+      width: 100%;
+      float: left;
+
+      > div {
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+
+        @media (min-width: 750px) {
+          width: 50%;
+        }
+      }
+
+      .text {
+        position: relative;
+        padding: 35px 0;
+        text-align: center;
+
+        h3 {
+          margin-top: 0;
+        }
+      }
+
+      &:nth-child(odd) {
+        .text {
+          padding-right: 20px;
+
+          @media (min-width: 750px) {
+            text-align: right;
+          }
+
+          .circle {
+            position: absolute;
+            right: 0;
+            transform: translateX(50%);
+          }
+        }
+
+        .img {
+          padding-left: 20px;
+        }
+      }
+
+      &:nth-child(even) {
+        .text {
+          padding-left: 20px;
+
+          @media (min-width: 750px) {
+            text-align: left;
+          }
+
+          .circle {
+            position: absolute;
+            left: 0;
+            transform: translateX(-50%);
+          }
+        }
+
+        .img {
+          padding-right: 20px;
+        }
+      }
+
+      .img {
+        text-align: center;
+        //animation-name: img-rotation;
+        //animation-duration: 5s;
+        //animation-iteration-count: infinite;
+
+        &.hidden {
+          display: block;
+
+          @media (min-width: 750px) {
+            display: none;
+          }
+        }
+
+        &.shown {
+          display: none;
+
+          @media (min-width: 750px) {
+            display: block;
+          }
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

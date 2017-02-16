@@ -7,15 +7,39 @@
 @import "process/process";
 @import "team/team";
 @import "contact/contact";
+@import "footer/footer";
 
 body {
-  width: 100vw;
+  min-width: 450px;
   min-height: 50px;
   margin: 0;
+  background-image: url('/src/logo/pattern.svg');
   font-family: 'Muli', 'Arial', sans-serif;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+section {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  will-change: transform;
+  @include will-change-legacy;
+}
+
+.title {
+  width: 100%;
+  margin: 0 0 25px 0;
+  text-align: center;
+  font-family: Poiret One, 'cursive';
+  font-weight: 100;
+  font-size: 4.5rem;
+}
+
+.subtitle {
+  @extend .title;
+  font-size: 2.5rem;
 }
