@@ -1,5 +1,10 @@
 #services {
+  padding: 70px 15px;
   color: #fff;
+
+  @media (min-width: 1000px) {
+    padding: 70px 150px;
+  }
 
   .title {
     margin-bottom: 50px;
@@ -7,14 +12,39 @@
 
   .services {
     display: flex;
+    flex-wrap: wrap;
 
     > div {
+      min-width: 100%;
       flex: 1;
+      margin-bottom: 25px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      text-align: center;
+
+      @media (min-width: 750px) {
+        min-width: 0;
+        text-align: left;
+      }
 
       .img {
         width: 100%;
         min-height: 183px;
         text-align: center;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      > * {
+        max-width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      > p {
+        font-weight: 100;
       }
     }
   }
@@ -33,11 +63,15 @@
       justify-content: center;
 
       article {
-        max-width: 300px;
+        max-width: 150px;
         flex: 1;
-        margin: 0 30px;
+        margin: 0 15px;
         position: relative;
         cursor: pointer;
+
+        @media (min-width: 750px) {
+          margin: 0 30px;
+        }
 
         &:hover {
           .cover {

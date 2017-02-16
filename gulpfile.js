@@ -98,6 +98,7 @@ gulp.task('replace', () => {
     .pipe(replace(text('services'), file('./src/services/_services.html')))
     .pipe(replace(text('process'), file('./src/process/_process.html')))
     .pipe(replace(text('contact'), file('./src/contact/_contact.html')))
+    .pipe(replace(text('footer'), file('./src/footer/_footer.html')))
     .pipe(gulp.dest('./'));
 
   function text(name) {

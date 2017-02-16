@@ -1,5 +1,10 @@
 #golang {
+  padding: 70px 15px;
   background-color: #fff;
+
+  @media (min-width: 850px) {
+    padding: 70px 150px;
+  }
 
   .row {
     width: 100%;
@@ -7,23 +12,55 @@
 
     .column {
       flex: 1;
+      text-align: center;
 
-      &:first-child {
-        text-align: right;
+      @media (min-width: 750px) {
+        &:nth-child(1) {
+          text-align: right;
+        }
+
+        &:nth-child(2) {
+          text-align: left;
+        }
+      }
+
+      &.img {
+        display: none;
+
+        @media (min-width: 750px) {
+          display: block;
+        }
       }
     }
 
-    &:nth-of-type(1) {
-      img {
-        margin: 0 0 0 50px;
+    &.first {
+      @media (min-width: 750px) {
+        img {
+          padding: 0 0 0 50px;
+        }
       }
     }
 
-    &:nth-of-type(2) {
-      img {
-        margin: 0 50px 0 0;
+    &.second {
+      @media (min-width: 750px) {
+        img {
+          padding: 0 50px 0 0;
+        }
       }
     }
+  }
+
+  .hidden {
+    display: block;
+
+    @media (min-width: 750px) {
+      display: none;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   p {
