@@ -9,6 +9,13 @@
     padding: 70px 150px;
   }
 
+  .circle {
+    height: 25px;
+    width: 25px;
+    background: #dadada;
+    border-radius: 50%;
+  }
+
   .line {
     width: 3px;
     height: calc(100% - 200px);
@@ -16,6 +23,21 @@
     left: 50%;
     background: #dadada;
     @include transform(translateX(-50%));
+
+    .circle {
+      position: absolute;
+      left: 50%;
+
+      &:first-child {
+        top: 0;
+        @include transform(translate(-50%, -50%));
+      }
+
+      &:last-child {
+        bottom: 0;
+        @include transform(translate(-50%, +50%));
+      }
+    }
   }
 
   .content {
@@ -41,10 +63,31 @@
       }
 
       .text {
-        padding-top: 25px;
+        position: relative;
+        padding-top: 35px;
 
         &:nth-child(odd) {
           text-align: right;
+
+          .circle {
+            position: absolute;
+            right: 0;
+            transform: translateX(50%);
+          }
+        }
+
+        &:nth-child(even) {
+          text-align: left;
+
+          .circle {
+            position: absolute;
+            left: 0;
+            transform: translateX(-50%);
+          }
+        }
+
+        h3 {
+          margin-top: 0;
         }
       }
 
