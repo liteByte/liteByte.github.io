@@ -77,6 +77,23 @@
           }
         }
       }
+
+      .form-button{
+        display: block;
+        width: 90px;
+        margin: 0 auto 15px auto;
+        padding: 13px 20px;
+        color: white;
+        text-align: center;
+        border: 1px solid white;
+        cursor: pointer;
+        text-transform: uppercase;
+        @include transition(background-color .1s);
+
+        &:hover{
+          background-color: rgba(34, 34, 34, 0.52);
+        }
+      }
     }
 
     .alternatives {
