@@ -10,7 +10,7 @@
 @import "footer/footer";
 
 body {
-  min-width: 450px;
+  min-width: 300px;
   min-height: 50px;
   margin: 0;
   background-image: url('/src/logo/pattern.svg');
@@ -36,7 +36,11 @@ section {
   text-align: center;
   font-family: Poiret One, 'cursive';
   font-weight: 100;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
+
+  @media (min-width: 460px) {
+    font-size: 4.5rem;
+  }
 }
 
 .subtitle {
