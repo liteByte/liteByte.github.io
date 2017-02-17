@@ -108,8 +108,12 @@
           position: relative;
           top: 50%;
           font-weight: 100;
-          font-size: 1.5rem;
+          font-size: 3.5vw;
           transform: translateY(-50%);
+
+          @media (min-width: 600px) {
+            font-size: 1.5rem;
+          }
         }
       }
     }
