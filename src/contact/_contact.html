@@ -8,19 +8,20 @@
 
                 <h3>Use this form!</h3>
 
-                <div class="question-container">
-                    <input class="answer" type="text" placeholder="What's your name?">
-                </div>
+                <form>
+                    <div class="question-container">
+                        <input class="answer" type="text" placeholder="What's your name?" required tabindex="1">
+                    </div>
 
-                <div class="question-container">
-                    <input class="answer" type="text" placeholder="What's your email address?">
-                </div>
+                    <div class="question-container">
+                        <input class="answer" type="email" placeholder="What's your email address?" required tabindex="2">
+                    </div>
 
-                <div class="question-container">
-                    <textarea class="answer" placeholder="How may we help you?" maxlength="500" onkeyup="adjustTextArea(this)"></textarea>
-                </div>
-
-                <a class="form-button submit">Send</a>
+                    <div class="question-container">
+                        <textarea class="answer" placeholder="How may we help you?" maxlength="500" onkeyup="adjustTextArea(this)" required tabindex="3"></textarea>
+                    </div>
+                    <input type="submit" class="submit" tabindex="4">
+                </form>
 
             </div>
         </div>

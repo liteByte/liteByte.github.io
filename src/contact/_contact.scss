@@ -35,7 +35,7 @@
       }
 
       h3 {
-        margin: 0 0 25px 0;
+        margin: 0 0 10px 0;
       }
 
       .question-container {
@@ -47,28 +47,27 @@
         }
 
         textarea {
-          height: 124px;
+          height: 148px;
           max-height: 250px;
+          @include scrollbars(.75em, #AAAAAA, #393939);
         }
 
         .answer {
           width: 100%;
-          overflow: hidden;
           resize: none;
           background: none;
           border: 0;
-          border-bottom: 1px solid white;
-          color: white;
+          border-bottom: 1px solid #fff;
+          color: #fff;
           font-family: inherit;
           font-size: 1rem;
           line-height: 20px;
+          padding: 5px;
+          box-sizing: border-box;
+          outline-color: white;
 
           @media (min-width: 750px) {
             max-width: 500px;
-          }
-
-          &:focus {
-            outline-width: 0;
           }
 
           &:disabled {
@@ -77,20 +76,26 @@
         }
       }
 
-      .form-button{
-        display: block;
+      .submit {
         width: 90px;
-        margin: 0 auto 15px auto;
+        margin: 0 auto;
         padding: 13px 20px;
+        display: block;
+        border: 1px solid white;
+        background: none;
         color: white;
         text-align: center;
-        border: 1px solid white;
         cursor: pointer;
         text-transform: uppercase;
+        outline-color: white;
         @include transition(background-color .1s);
 
-        &:hover{
-          background-color: rgba(34, 34, 34, 0.52);
+        &:hover {
+          background-color: rgba(26, 26, 26, 0.5);
+        }
+
+        &:active {
+          background-color: rgba(6, 6, 6, 0.5);
         }
       }
     }
