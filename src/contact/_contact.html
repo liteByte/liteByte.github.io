@@ -4,41 +4,47 @@
 
     <div class="content">
         <div class="questions">
+            <div class="wrapper">
 
-            <h3>Use this form!</h3>
+                <h3>Use this form!</h3>
 
-            <div class="question-container">
-                <input class="answer" type="text" placeholder="What's your name?">
+                <div class="question-container">
+                    <input class="answer" type="text" placeholder="What's your name?">
+                </div>
+
+                <div class="question-container">
+                    <input class="answer" type="text" placeholder="What's your email address?">
+                </div>
+
+                <div class="question-container">
+                    <textarea class="answer" placeholder="How may we help you?" maxlength="500" onkeyup="adjustTextArea(this)"></textarea>
+                </div>
+
+                <a class="form-button submit">Send</a>
+
             </div>
-
-            <div class="question-container">
-                <input class="answer" type="text" placeholder="What's your email address?">
-            </div>
-
-            <div class="question-container">
-                <textarea class="answer" placeholder="How may we help you?" maxlength="500"
-                          onkeyup="adjustTextArea(this)"></textarea>
-            </div>
-
-            <a class="form-button submit">Send</a>
-
         </div>
 
         <div class="alternatives">
-            <div class="email">
-                <h3>Or send an email to:</h3>
-                <p>contact@litebyte.us</p>
-            </div>
+            <div class="wrapper">
 
-            <div class="phone">
-                <h3>You could also call us</h3>
-                <p><a href="tel:+54 1287-2593">+54 1287-2593</a></p>
-            </div>
+                <div class="email">
+                    <h3>Or send an email to:</h3>
+                    <p>contact@litebyte.us</p>
+                </div>
 
-            <div class="map">
-                <h3>Or come visit us at:</h3>
-                <p>Santa Rosa 5038, Palermo, Capital Federal</p>
+                <div class="phone">
+                    <h3>You could also call us</h3>
+                    <p><a href="tel:+54 1287-2593">+54 1287-2593</a></p>
+                </div>
+
+                <div class="map">
+                    <h3>Or come visit us at:</h3>
+                    <p>Santa Rosa 5038, Palermo, Capital Federal</p>
+                </div>
+
                 <div id="map"></div>
+
             </div>
         </div>
     </div>
