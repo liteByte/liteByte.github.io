@@ -119,3 +119,7 @@
     }
   }
 }
+
+.parallax-mirror:nth-of-type(2) img {
+  background-image: url('/src/index/pattern.svg');
+}
