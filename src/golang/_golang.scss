@@ -2,7 +2,7 @@
   padding: 70px 15px;
   background-color: #fff;
 
-  @media (min-width: 850px) {
+  @media (min-width: 890px) {
     padding: 70px 150px;
   }
 
@@ -64,6 +64,36 @@
   }
 
   p {
-    line-height: 25px;
+    margin-top: 0;
+    line-height: 30px;
+
+    @media (min-width: 750px) and (max-width: 890px) {
+      margin-top: 25px;
+    }
+
+    @media (min-width: 1000px) {
+      margin-top: 35px;
+      line-height: 35px;
+    }
+  }
+
+  .br-1 {
+    display: none;
+
+    @media (min-width: 1260px) {
+      display: inline;
+    }
+  }
+
+  .br-2 {
+    display: none;
+
+    @media (min-width: 1260px) {
+      display: inline;
+    }
+  }
+
+  .no-margin {
+    margin-top: 0;
   }
 }
