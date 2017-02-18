@@ -1,32 +1,51 @@
 // Mixins
 
 @mixin transition($transition) {
-    -webkit-transition: $transition;
-    -moz-transition: $transition;
-    -ms-transition: $transition;
-    transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
 }
 
 @mixin transform($trans) {
-    -moz-transform: $trans;
-    -webkit-transform: $trans;
-    -o-transform: $trans;
-    -ms-transform: $trans;
-    transform: $trans;
+  -moz-transform: $trans;
+  -webkit-transform: $trans;
+  -o-transform: $trans;
+  -ms-transform: $trans;
+  transform: $trans;
 }
 
 @mixin linear-gradient($color-stop1, $color-stop2) {
-    background: -moz-linear-gradient(top, $color-stop1, $color-stop2); /* FF3.6+ */
-    background: -webkit-linear-gradient(top, $color-stop1, $color-stop2); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, $color-stop1, $color-stop2); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, $color-stop1, $color-stop2); /* IE10+ */
-    background: linear-gradient(to bottom, $color-stop1, $color-stop2); /* W3C */
+  background: -moz-linear-gradient(top, $color-stop1, $color-stop2); /* FF3.6+ */
+  background: -webkit-linear-gradient(top, $color-stop1, $color-stop2); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $color-stop1, $color-stop2); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $color-stop1, $color-stop2); /* IE10+ */
+  background: linear-gradient(to bottom, $color-stop1, $color-stop2); /* W3C */
 }
 
 @mixin will-change-legacy() {
-    -moz-transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  scrollbar-face-color: $foreground-color;
+  scrollbar-track-color: $background-color;
 }
