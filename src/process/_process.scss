@@ -142,7 +142,9 @@
         }
 
         .img {
+          max-width: 300px;
           min-height: 250px;
+          margin: 0 auto;
           background-repeat: no-repeat;
           background-position: 50%;
           animation-duration: 5s;
