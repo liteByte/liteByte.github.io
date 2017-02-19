@@ -73,6 +73,10 @@
         padding: 35px 0;
         text-align: center;
 
+        @media (min-width: 750px) {
+          padding: 50px 0 35px 0;
+        }
+
         h3 {
           margin-top: 0;
         }
@@ -93,7 +97,7 @@
           }
         }
 
-        .img {
+        .img-container {
           padding-left: 20px;
         }
       }
@@ -113,16 +117,13 @@
           }
         }
 
-        .img {
+        .img-container {
           padding-right: 20px;
         }
       }
 
-      .img {
+      .img-container {
         text-align: center;
-        //animation-name: img-rotation;
-        //animation-duration: 5s;
-        //animation-iteration-count: infinite;
 
         &.hidden {
           display: block;
@@ -140,8 +141,29 @@
           }
         }
 
-        img {
-          max-width: 100%;
+        .img {
+          min-height: 250px;
+          background-repeat: no-repeat;
+          background-position: 50%;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+
+          &.asset1 {
+            background-image: url('/src/process/img/asset-1.1.svg');
+            animation-name: asset1;
+          }
+          &.asset2 {
+            background-image: url('/src/process/img/asset-2.1.svg');
+            animation-name: asset2;
+          }
+          &.asset3 {
+            background-image: url('/src/process/img/asset-3.1.svg');
+            animation-name: asset3;
+          }
+          &.asset4 {
+            background-image: url('/src/process/img/asset-4.1.svg');
+            animation-name: asset4;
+          }
         }
       }
     }
