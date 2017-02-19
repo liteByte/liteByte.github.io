@@ -142,48 +142,19 @@
         }
 
         .img {
-          min-height: 250px;
-          background-repeat: no-repeat;
-          background-position: 50%;
-          animation-duration: 5s;
-          animation-iteration-count: infinite;
+          max-width: 300px;
+          min-height: 254px;
+          margin: 0 auto;
+          position: relative;
 
-          &.asset1 {
-            background-image: url('/src/process/img/asset-1.1.svg');
-            animation-name: asset1;
-          }
-          &.asset2 {
-            background-image: url('/src/process/img/asset-2.1.svg');
-            animation-name: asset2;
-          }
-          &.asset3 {
-            background-image: url('/src/process/img/asset-3.1.svg');
-            animation-name: asset3;
-          }
-          &.asset4 {
-            background-image: url('/src/process/img/asset-4.1.svg');
-            animation-name: asset4;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
           }
         }
       }
-    }
-  }
-
-  @media screen {
-    #preloader {
-      position: absolute;
-      left: -9999px;
-      top: -9999px;
-    }
-
-    #preloader img {
-      display: block;
-    }
-  }
-  @media print {
-    #preloader, #preloader img {
-      visibility: hidden;
-      display: none;
     }
   }
 }
