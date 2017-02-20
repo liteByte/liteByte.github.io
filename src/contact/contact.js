@@ -9,8 +9,10 @@ $(document).ready(function () {
 
 function submitContactForm() {
 
+  var section = $("#contact");
+
   var data = [];
-  var questions = $("#contact .questions .question-container");
+  var questions = section.find(".questions .question-container");
 
   questions.each(function () {
 
@@ -25,14 +27,14 @@ function submitContactForm() {
   });
 
   $.ajax({
-    url: 'http://litebyte.us/util/functions.php',
+    url: 'https://litebyteus.ipage.com/util/functions.php',
     type: 'POST',
     data: {
       operation: 'submitContactForm',
       data: JSON.stringify(data)
     },
     success: function () {
-
+      section.find('.submit').prop('value', 'Sent!');
     }
   });
 }
