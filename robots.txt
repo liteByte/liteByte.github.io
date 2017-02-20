@@ -1,0 +1,14 @@
+User-agent: *
+Sitemap: http://litebyte.us/sitemap.xml
+
+#
+#   oooo   o8o      .             oooooooooo.                  .
+#   `888   `"'    .o8             `888'   `Y8b               .o8
+#    888  oooo  .o888oo  .ooooo.   888     888 oooo    ooo .o888oo  .ooooo.
+#    888  `888    888   d88' `88b  888oooo888'  `88.  .8'    888   d88' `88b
+#    888   888    888   888ooo888  888    `88b   `88..8'     888   888ooo888
+#    888   888    888 . 888    .o  888    .88P    `888'      888 . 888    .o
+#   o888o o888o   "888" `Y8bod8P' o888bood8P'      .8'       "888" `Y8bod8P'
+#                                              .o..P'
+#                                              `Y8P'
+#
