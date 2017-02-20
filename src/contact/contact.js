@@ -25,7 +25,7 @@ function submitContactForm() {
   });
 
   $.ajax({
-    url: 'http://litebyte.us/util/functions.php',
+    url: 'https://litebyteus.ipage.com//util/functions.php',
     type: 'POST',
     data: {
       operation: 'submitContactForm',
