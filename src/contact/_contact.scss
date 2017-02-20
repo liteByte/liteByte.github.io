@@ -97,6 +97,10 @@
         &:active {
           background-color: rgba(6, 6, 6, 0.5);
         }
+
+        &[disabled] {
+          color: #808080;
+        }
       }
     }
 
