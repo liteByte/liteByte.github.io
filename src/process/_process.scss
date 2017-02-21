@@ -34,16 +34,41 @@
       display: block;
     }
 
+    &.n1 {
+      height: 110px;
+      top: 179px;
+    }
+
+    &.n2 {
+      height: 260px;
+      top: 289px;
+    }
+
+    &.n3 {
+      height: 250px;
+      top: 549px;
+    }
+
+    &.n4 {
+      height: 250px;
+      top: 799px;
+    }
+
+    &.n5 {
+      height: 200px;
+      top: 1049px;
+    }
+
     .circle {
       position: absolute;
       left: 50%;
 
-      &:first-child {
+      &.top {
         top: 0;
         @include transform(translate(-50%, -50%));
       }
 
-      &:last-child {
+      &.bottom {
         bottom: 0;
         @include transform(translate(-50%, +50%));
       }
