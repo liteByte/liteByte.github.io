@@ -11,8 +11,7 @@
   }
 
   .services {
-    display: flex;
-    flex-wrap: wrap;
+    @include displayFlex();
 
     > div {
       min-width: 100%;
@@ -59,7 +58,7 @@
     }
 
     > div {
-      display: flex;
+      @include displayFlex();
       justify-content: center;
 
       article {
