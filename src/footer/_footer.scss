@@ -9,7 +9,7 @@ footer {
   @include will-change-legacy;
 
   .container {
-    display: flex;
+    @include displayFlex();
     flex-wrap: wrap;
     justify-content: center;
 

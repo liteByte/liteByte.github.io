@@ -8,7 +8,7 @@
 
   .row {
     width: 100%;
-    display: flex;
+    @include displayFlex();
 
     .column {
       flex: 1;
