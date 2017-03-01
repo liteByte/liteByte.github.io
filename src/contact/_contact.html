@@ -10,17 +10,20 @@
 
                 <form>
                     <div class="question-container">
-                        <input class="answer" type="text" placeholder="What's your name?" required tabindex="1">
+                        <label>What's your name?</label>
+                        <input class="answer" type="text" placeholder="What's your name?" required>
                     </div>
 
                     <div class="question-container">
-                        <input class="answer" type="email" placeholder="What's your email address?" required tabindex="2">
+                        <label>What's your email address?</label>
+                        <input class="answer" type="email" placeholder="What's your email address?" required>
                     </div>
 
                     <div class="question-container">
-                        <textarea class="answer" placeholder="How may we help you?" maxlength="500" onkeyup="adjustTextArea(this)" required tabindex="3"></textarea>
+                        <label>How may we help you?</label>
+                        <textarea class="answer" placeholder="How may we help you?" maxlength="500" onkeyup="adjustTextArea(this)" required></textarea>
                     </div>
-                    <input type="submit" class="submit" tabindex="4" value="Submit">
+                    <input type="submit" class="submit" value="Submit">
                 </form>
 
             </div>

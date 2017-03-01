@@ -52,6 +52,10 @@
           @include scrollbars(.75em, #AAAAAA, #393939);
         }
 
+        label {
+          display: none;
+        }
+
         .answer {
           width: 100%;
           resize: none;
