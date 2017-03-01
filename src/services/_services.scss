@@ -15,7 +15,7 @@
 
     > div {
       min-width: 100%;
-      @include flex(1);
+      @include flex(1 1 auto);
       margin-bottom: 25px;
       padding: 0 10px;
       box-sizing: border-box;
