@@ -10,18 +10,18 @@
 
                 <form>
                     <div class="question-container">
-                        <label>What's your name?</label>
-                        <input class="answer" type="text" placeholder="What's your name?" required>
+                        <label for="contact-name">What's your name?</label>
+                        <input id="contact-name" class="answer" type="text" placeholder="What's your name?" required>
                     </div>
 
                     <div class="question-container">
-                        <label>What's your email address?</label>
-                        <input class="answer" type="email" placeholder="What's your email address?" required>
+                        <label for="contact-email">What's your email address?</label>
+                        <input id="contact-email" class="answer" type="email" placeholder="What's your email address?" required>
                     </div>
 
                     <div class="question-container">
-                        <label>How may we help you?</label>
-                        <textarea class="answer" placeholder="How may we help you?" maxlength="500" onkeyup="adjustTextArea(this)" required></textarea>
+                        <label for="contact-help">How may we help you?</label>
+                        <textarea id="contact-help" class="answer" placeholder="How may we help you?" maxlength="500" onkeyup="adjustTextArea(this)" required></textarea>
                     </div>
                     <input type="submit" class="submit" value="Submit">
                 </form>
