@@ -1,0 +1,17 @@
+#ourclients {
+  padding: 70px 15px;
+  display: inline-block;
+  background-color: #fff;
+  text-align: center;
+  border-top: solid 1px black;
+  > .img {
+    display: inline-block;
+    margin: 0 20px;
+    > img {
+      max-width: 125px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
