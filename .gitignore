@@ -2,5 +2,5 @@
 node_modules/
 src/**/*.css
 /dist
-/index.html
+/*.html
 .DS_Store

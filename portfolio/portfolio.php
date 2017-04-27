@@ -61,7 +61,7 @@ function read_from_file($filename) {
                <h3 class="related-subtitle">Related works</h3>
             <div>
             <div class="related-img-container">
-               <article onclick="window.location = 'portfolio.php?project=logibot'">
+               <article onclick="window.location = 'portfolio.php?project=logitbot'">
                    <img src="../src/services/portfolio/logitbot.png" alt="Example website">
                </article>
                <article onclick="window.location = 'portfolio.php?project=pyramis'">
