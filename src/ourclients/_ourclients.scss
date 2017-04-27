@@ -3,12 +3,14 @@
   display: inline-block;
   background-color: #fff;
   text-align: center;
-  border-top: solid 1px black;
+
   > .img {
-    display: inline-block;
     margin: 0 20px;
+    display: inline-block;
+
     > img {
-      max-width: 125px;
+      max-width: 100px;
+
       &:hover {
         opacity: 0.8;
       }

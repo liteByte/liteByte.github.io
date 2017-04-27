@@ -68,7 +68,7 @@ gulp.task('minify-css', () => {
 //****************************** HTML ******************************
 
 gulp.task('html', callback => {
-  gulpSequence('minify-html', 'copy-index-html', 'inject', 'replace', 'minify-index')(callback);
+  gulpSequence('minify-html', 'inject', 'replace', 'minify-index', 'copy-html-to-root')(callback);
 });
 
 gulp.task('minify-html', () => {
@@ -78,20 +78,15 @@ gulp.task('minify-html', () => {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('copy-index-html', () => {
-  return gulp.src('./src/index.html')
-    .pipe(gulp.dest('./'));
-});
-
 gulp.task('inject', () => {
-  return gulp.src('./index.html')
+  return gulp.src('./dist/*.html')
     .pipe(inject(gulp.src(['./dist/*.css'], {read: false})))
     .pipe(inject(gulp.src(['./dist/*.js'], {read: false})))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('replace', () => {
-  return gulp.src('./index.html')
+  return gulp.src('./dist/*.html')
     .pipe(replace(text('header'), file('./src/header/_header.html')))
     .pipe(replace(text('logo'), file('./src/logo/_logo.html')))
     .pipe(replace(text('golang'), file('./src/golang/_golang.html')))
@@ -100,7 +95,7 @@ gulp.task('replace', () => {
     .pipe(replace(text('contact'), file('./src/contact/_contact.html')))
     .pipe(replace(text('footer'), file('./src/footer/_footer.html')))
     .pipe(replace(text('ourclients'), file('./src/ourclients/_ourclients.html')))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./dist'));
 
   function text(name) {
     return `<!-- REPLACE ${name} -->`;
@@ -112,11 +107,16 @@ gulp.task('replace', () => {
 });
 
 gulp.task('minify-index', () => {
-  return gulp.src('./index.html')
+  return gulp.src('./dist/*.html')
     .pipe(htmlmin({
       collapseWhitespace: true,
       removeComments: true
     }))
+    .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('copy-html-to-root', () => {
+  return gulp.src('./dist/*.html')
     .pipe(gulp.dest('./'));
 });
 
