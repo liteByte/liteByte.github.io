@@ -1,0 +1,26 @@
+.xposure {
+
+  $color: #44b450;
+
+  .name {
+    background-color: $color;
+  }
+
+  .pictures {
+
+    > div {
+      width: 100%;
+      min-width: 300px;
+      text-align: center;
+
+      img {
+        min-width: 0;
+        height: auto;
+        flex: auto;
+        padding: 10px;
+        box-sizing: border-box;
+        object-fit: scale-down;
+      }
+    }
+  }
+}
