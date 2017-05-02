@@ -1,5 +1,0 @@
-Pyramis LLC wanted to bring their customers a new way of browsing and purchasing plane
-parts. Instead of the typical calling to check availability or going to the store, with
-Pyramis we created a web portal capable of handling all the important data related to
-every piece of every plane, including price, stock, and a search engine that could meet
-their users expectations.

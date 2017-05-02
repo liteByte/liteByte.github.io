@@ -1,4 +1,0 @@
-Phonegap<br>
-PHP<br>
-MySQL<br>
-AngularJS
