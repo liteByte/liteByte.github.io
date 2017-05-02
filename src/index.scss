@@ -4,11 +4,17 @@
 @import "logo/logo";
 @import "golang/golang";
 @import "services/services";
+@import "ourclients/ourclients";
 @import "process/process";
 @import "team/team";
 @import "contact/contact";
 @import "footer/footer";
-@import "ourclients/ourclients";
+
+@import "portfolio/portfolio";
+@import "portfolio/logitbot/logitbot";
+@import "portfolio/pyramis/pyramis";
+@import "portfolio/electrolaf/electrolaf";
+@import "portfolio/xposure/xposure";
 
 body {
   min-width: 300px;
