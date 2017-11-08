@@ -50,13 +50,13 @@ function adjustTextArea(textarea) {
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.5883534, lng: -58.4298406},
+    center: {lat: -34.605095, lng: -58.438959},
     scrollwheel: false,
     zoom: 16
   });
   var marker = new google.maps.Marker({
     map: map,
-    position: {lat: -34.5883534, lng: -58.4298406},
+    position: {lat: -34.605095, lng: -58.438959},
     title: 'We are here!'
   });
 }
